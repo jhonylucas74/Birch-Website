@@ -34,9 +34,9 @@
 			<div class="sixteen columns" >
 				<img src="images/birch.png">
 				<ul>
-					<li>WINDOWS</li>
-					<li>LINUX</li>					
-					<a href="/index.html"><li>HOME</li></a>
+					<a href="./windows.html"><li>WINDOWS</li></a>
+					<a href="./ubuntu.html"><li>LINUX</li></a>
+					<a href="./index.html"><li>HOME</li></a>
 				</ul>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 		<div class="container">
 			<div class="sixteen columns" >
 				<img class="center" src="images/Birch_center.png">
-				<a href="#"><img class="center" src="images/baixar_arquivo.png"></a>
+				<a href="./birch.rar"><img class="center" src="images/baixar_arquivo.png"></a>
 			</div>
 		</div>
 	</div>
@@ -56,8 +56,8 @@
 	<div class="container">
 		<div class="sixteen columns" >
 			<h3>Mas o que é isso? </h3>
-			<p>Birch é um gerador de classes java, mais especificamente um gerador de Data Access Object, conhecido popularmente como DAO. O objetivo principal é a redução do tempo de desenvolvimento de um DAO. Tornando simples o processo de criação, fazendo algo que demoraria alguns minutos para alguém experiente, em apenas alguns segundos. Sua plicação é tanto profissional como didática. Auxiliando o seu utilizador ao acelerar a cocepção de um DAO tradicional, até como exemplo didático para aqueles que tem dificuldades ou está iniciando seus estudos sobre banco de dados e java.  </p>					
-			<p>Inicialmente birch foi projetado para ser utilizado no ubuntu, no entanto é possível utiliza-lo  em outros S.O’s e distribuições do linux. Abaixo segue dois links que descrevem como deve ser realizado o processo de “instalação”  para o linux e windows.</p>
+			<p>Birch é um gerador de classes java, mais especificamente um gerador de Data Access Object, conhecido popularmente como DAO. O objetivo principal é a redução do tempo de desenvolvimento de um DAO. Tornando simples o processo de criação, fazendo algo que demoraria alguns minutos para alguém experiente, em apenas alguns segundos. Sua aplicação é tanto profissional como didática. Auxiliando o seu utilizador ao acelerar a concepção de um DAO tradicional, até como exemplo didático para aqueles que tem dificuldades ou está iniciando seus estudos sobre banco de dados e java.  </p>					
+			<p>Inicialmente birch foi projetado para ser utilizado no ubuntu, no entanto é possível utilizá-lo  em outros S.O’s e distribuições do linux. Abaixo segue dois links que descrevem como deve ser realizado o processo de “instalação”  para o linux e windows.</p>
 
 			<ul>
 				<li> <a href="file:///home/jhony/Dropbox/FrontEnd/Birch/ubuntu.html"> Linux </a> </li>
@@ -66,7 +66,7 @@
 
 			<h3> Comandos no birch </h3>
 
-			<p> Birch foi feito para ser um programa executado por linhas de comando, algumas pessoas não estão muito acostumados com isso. Sem interface gráfica a única coisa que precisa fazer é decorar alguns comandos, ou favoritar a página e  quando tiver dúvida dar um pulinho aqui. Logo após a configuração adequada do birch no seu S.O é esperado que ele esteja acessível pelo seu terminal de comando. Vamos levar em consideração que já temos um projeto no eclipse e queira criar um DAO para uma classe chamada Aluno, sendo que essa classe ainda não existe. Abra o seu terminal e entre na pasta do seu projeto, comigo seria assim.  </p>
+			<p>Birch foi feito para ser um programa executado por linhas de comando, algumas pessoas não estão muito acostumados com isso. Sem interface gráfica a única coisa que precisa fazer é decorar alguns comandos, ou favoritar a página e  quando tiver dúvida dar um pulinho aqui. Logo após a configuração adequada do birch no seu S.O é esperado que ele esteja acessível pelo seu terminal de comando. Vamos levar em consideração que já temos um projeto no eclipse e queira criar um DAO para uma classe chamada Aluno, sendo que essa classe ainda não existe. Abra o seu terminal e entre na pasta do seu projeto, comigo seria assim.</p>
 
 			<div class="code" > $   cd workspace/ </div>
 			<div class="code" > workspace$   cd Escola </div>
@@ -91,13 +91,13 @@
 
 			<p>Agora eu já tenho o meu DAO pronto, foram criados quatro arquivos: AlunoDAO.java que é o DAO em se, sem mistério nenhum. Aluno.java que é minha classe Aluno que possui os atributos convertidos, e já vem pronta para ser integrada junto com o meu programa. A ConnectionFactory que é uma classe padrão utilizada pelos DAO’s. Tables.java é uma classe que  pode ser utilizada para a criação das tabelas do BD.</p>
 
-			<p> Pelo que podemos ver, criar um DAO é algo fácil. Cuidado, ele sempre criará esses quatro arquivos. Então caso você já tivesse uma uma classe chamada Aluno.java ela seria substituida. Agora vamos entender  as partes do comando executado. Você pode passar quantos atributos você quiser para a criação do seu DAO. No comando a primeira coisa logo após o nome birch é o nome do modelo que queremos criar, que no caso seria Aluno. Esse será o nome da minha classe java, e o nome da minha tabela(entidade). Caso queira que sua entidade tenha um nome diferente, basta você escrever o comando dessa maneira: </p>
+			<p> Pelo que podemos ver, criar um DAO é algo fácil. Cuidado, ele sempre criará esses quatro arquivos. Então caso você já tivesse uma classe chamada Aluno.java ela seria substituída. Agora vamos entender  as partes do comando executado. Você pode passar quantos atributos você quiser para a criação do seu DAO. No comando a primeira coisa logo após o nome birch é o nome do modelo que queremos criar, que no caso seria Aluno. Esse será o nome da minha classe java, e o nome da minha tabela(entidade). Caso queira que sua entidade tenha um nome diferente, basta você escrever o comando dessa maneira: </p>
 
 			<div class="code" > workspace/Escola/src$  birch Aluno  -d Alunos nome:varchar\(50\) media:real  idade:int </div>
 
-			<p> Utilizando -d podemos dar um nome diferente para a entidade relacional, bastanto somente colocar o nome da entidade logo após o -d. Em seguida percebe-se que ao adicionar os atributos do modelo, definimos o tipo igualmente como definiríamos utilizando sql. Detalhe, ao usar parêteses é necessaário utilizar uma contra barra. Os tipos de atributos aceitos são: char, varchar, int, smallint, float, real. </p>
+			<p> Utilizando -d podemos dar um nome diferente para a entidade relacional, bastando somente colocar o nome da entidade logo após o -d. Em seguida percebe-se que ao adicionar os atributos do modelo, definimos o tipo igualmente como definiríamos utilizando sql. Detalhe, ao usar parênteses é necessário utilizar uma contra barra. Os tipos de atributos aceitos são: char, varchar, int, smallint, float, real. </p>
 
-			<p> Também é possivel utilizar a opção -id. Ao usá-lo adicionamos um atributo chamado id no nosso schema, ele é definido como chave primária. Toda vez que o DAO salvar uma instância do objeto, seu id será gerado automáticamente. </p>
+			<p> Também é possível utilizar a opção -id. Ao usá-lo adicionamos um atributo chamado id no nosso schema, ele é definido como chave primária. Toda vez que o DAO salvar uma instância do objeto, seu id será gerado automaticamente. </p>
 
 			<div class="code" > workspace/Escola/src$  birch Aluno  -id nome:varchar\(50\) media:real  idade:int </div>
 
