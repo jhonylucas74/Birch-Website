@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt"> 
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Birch</title>
+	<meta name="description" content="">
+	<meta name="author" content="Jhony Lucas C. da S.">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+  <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="stylesheets/base.css">
+	<link rel="stylesheet" href="stylesheets/skeleton.css">
+	<link rel="stylesheet" href="stylesheets/layout.css">
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:700' rel='stylesheet' type='text/css'>
+
+	<script type="text/javascript" src="scripts/shCore.js"></script>
+	<script type="text/javascript" src="scripts/shBrushJava.js"></script>
+	<link type="text/css" rel="stylesheet" href="stylesheets/shCoreDefault.css"/>
+	<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+</head>
+<body>
+	<!-- 1° Barra Principal ==============================-->
+	<div id="barra-top">
+		<div class="container">
+			<div class="sixteen columns" >
+				<img src="images/birch.png">
+				<ul>
+					<li>WINDOWS</li>
+					<li>LINUX</li>
+					<li>HOME</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 2° Barra Principal ==============================-->
+	<div id="barra-birch">
+		<div class="container">
+			<div class="sixteen columns" >
+				<img class="center" src="images/Birch_center.png">
+				<a href="#"><img class="center" src="images/baixar_arquivo.png"></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Contéudo principal da home ==============================-->
+	<div class="container">
+		<div class="sixteen columns" >
+			<h3>Birch no linux</h3>
+			<p>Logo após baixar o arquivo é necessário fazer algumas coisas. A primeira delas será descompactar o arquivo na sua pasta pessoal. Feito isso entre na pasta bin dentro de birch, abra o arquivo birch dentro da pasta bin com algum editor de texto. Deverá ver algo como isso.</p>					
+
+			<div class="code" > echo "Start bash.." <br>
+			java -jar /home/SeuNomeDeUsuarioAqui/birch/Birch.jar  "$@" 
+			</div>
+
+			<p> Agora substitua o valor de SeuNomeDeUsuarioAqui pelo seu nome de usuário. O mesmo nome da pasta onde foi descompactado o arquivo baixado. Veja que o caminho tem que ser válido, caso contrário não irá funcionar. Assim, o terceiro passo será aditar o arquivo chamado .bashrc , ele está na pasta de usuário. Será necessário ativar a opção de visualizar arquivos ocultos para encontrá-lo. Agora precisamos editar ele, no final do arquivo adicione o seguinte código.</p>
+			
+			<div class="code" > export PATH="/home/SeuNomeDeUsuarioAqui/birch/bin:$PATH"
+			</div>
+
+			<p> Da mesma maneira como da vez anterior é necessário substituir o valor de SeuNomeDeUsuarioAqui. Agora está feito, caso esteja com o seu terminal aberto, feche e o abra novamente. Caso não, já pode abrir e utilizar o birch.</p>
+
+			<hr class="style-six">
+			<div>
+				<img id="autor-img" src="https://avatars3.githubusercontent.com/u/5412488?v=2&s=140">
+				<blockquote>Jhony Lucas <br> jhonyjl37@gmail.com</blockquote>
+			</div>
+
+		</div>
+	</div>
+
+<!-- End Document
+================================================== -->
+</body>
+</html>

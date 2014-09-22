@@ -1,0 +1,101 @@
+ body {
+ 	background-color: #ffffff;
+ 	height: 900px;
+ }
+
+ #barra-top {
+ 	background-color: #ededed;
+ 	width: 100%;
+ 	height: 53px;
+ }
+
+		#barra-top  ul li {
+			margin-top: 16px;
+			display: inline-block;
+			margin-left: 18px;
+			float: right;
+			
+			font-size: 20px;
+  			font-family: 'Open Sans Condensed', sans-serif;
+  			color: rgb(157, 157, 157);
+  			font-weight: bold;
+		}
+
+		#barra-top img {
+			margin-top: 3px;
+		}
+
+		#barra-top img,ul { 
+				display: inline;
+		}
+
+#barra-birch {
+	background-color: #181818;
+	width: 100%;
+	height: 350px;
+}
+
+	#barra-birch img  {
+		margin-top: 25px;
+	}
+		
+.center {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+h3 {
+	margin-top: 25px;
+	font-family: 'georgia_regular';
+	font-weight: bold;
+	color: #393939;  
+	font-size: 25px;
+}
+
+p {	
+  font-size: 20px;
+  font-family: 'georgia_regular';
+  color: #393939;  
+  text-align: justify;  
+}
+
+.code {	
+	width: 95%;
+	display: block;
+	padding: 16px;		
+	line-height: 1.45;
+	background-color: #F7F7F7;
+	border-radius: 3px;
+	font: 14px Consolas,"Liberation Mono",Menlo,Courier,monospace;
+	margin-bottom: 20px;
+}
+
+#autor-img  {
+	width: 50px;
+	height: 50px;
+	border-radius: 5px;	
+	display: inline-block;
+}
+
+blockquote {
+	display: inline-block;
+	font-size: 16px;
+}
+
+hr.style-six {
+	 border: 0;
+	 height: 0;	 
+	 border-top: 1px solid rgba(0, 0, 0, 0.1);
+	 border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+	 margin-top: 40px;
+	 margin-bottom: 8px;
+}
+
+a,a:hover,a:focus,a:active,a:visited {
+	text-decoration: none;
+ 	color: #828CFA;
+ 	font-size: 20px;
+  	font-family: 'georgia_regular'; 	
+}
